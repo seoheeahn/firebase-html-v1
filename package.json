@@ -1,0 +1,13 @@
+{
+  "name": "algo-bee-profile",
+  "version": "1.0.0",
+  "description": "Pixel Art AlgoBee Profile Page",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx wrangler pages dev .",
+    "deploy": "npx wrangler pages deploy ."
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

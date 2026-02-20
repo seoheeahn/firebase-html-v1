@@ -12,8 +12,18 @@ A modern, tech-focused profile page for the character "AlgoBee". This page highl
     - **SkillBadge (Web Component)**: Pixelated outline style (#tag format).
     - **White Mode (Light Theme)**: Clean background with subtle grid lines.
 
-## Current Plan: Transition to Pixel Art Style
-1. **Implement Pixel Art Bee** using CSS `box-shadow`.
-2. **Apply Retro Font** (Press Start 2P) across the site.
-3. **Redesign UI** with blocky borders and shadows for a retro game feel.
-4. **Push the changes** to the repository.
+## Cloudflare Pages Deployment (GitHub Integration)
+이 프로젝트는 GitHub에 푸시하면 자동으로 Cloudflare Pages에 배포되도록 설계되었습니다.
+1. **Cloudflare Pages** 대시보드에 접속합니다.
+2. **"Create a project" > "Connect to Git"**을 선택합니다.
+3. 이 GitHub 저장소 (`firebase-html-v1`)를 선택합니다.
+4. **Build settings**:
+    - **Framework preset**: `None`
+    - **Build command**: (비워둠)
+    - **Build output directory**: `/` (루트 디렉토리)
+5. **Save and Deploy**를 누르면 이후 GitHub에 푸시할 때마다 자동으로 배포됩니다.
+
+## Current Plan: Cloudflare Deployment Setup
+1. **Create `package.json`**: Add `wrangler` and basic scripts.
+2. **Add `.node-version`**: Set Node.js version for Cloudflare build.
+3. **Push to GitHub**: Changes will trigger deployment if connected.
