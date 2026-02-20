@@ -1,22 +1,20 @@
-# AlgoBee Profile Page Blueprint
+# AlgoBee Profile Page & Studio Blueprint
 
 ## Overview
-A modern, tech-focused profile page for the character "AlgoBee". This page highlights the character's skills, bio, and provides links to social media profiles using interactive SNS buttons.
+A modern, tech-focused platform for the character "AlgoBee". It features an AI-driven Question Generation Studio and a showcase of published question sets.
 
 ## Project Details
 - **Character Name:** AlgoBee
 - **Features:**
-    - **Pixel Art Hero**: Cute CSS-drawn dot bee character.
-    - **Retro Aesthetics**: Uses 'Press Start 2P' font and blocky UI elements.
-    - **Interactive SNS buttons**: Hover effect with pixel-style shadows.
-    - **SkillBadge (Web Component)**: Pixelated outline style (#tag format).
-    - **White Mode (Light Theme)**: Clean background with subtle grid lines.
+    - **Modern Aesthetics**: Uses 'Inter' font and clean, spacious UI elements.
+    - **Question Generator Studio**: A 5-step messenger-style interactive tool to create question sets.
+    - **Question Set Listing**: `index.html` displays published question sets saved in `localStorage`.
+    - **About Page (`about.html`)**: A detailed introduction to AlgoBee Studio's features and mission.
+    - **Response Page (`respond.html`)**: A dedicated page for users to answer published question sets.
+    - **Static Experience**: No animations or unnecessary movement, focusing on content and clarity.
 
-## Firebase Deployment
-This project is configured for deployment on Firebase Hosting.
-
-## Current Plan: Project Cleanup
-1. **Remove Cloudflare Files**: Deleted `wrangler.toml`.
-2. **Update `package.json`**: Removed `wrangler` dependency and associated scripts.
-3. **Update `blueprint.md`**: Removed Cloudflare deployment instructions.
-4. **Push to GitHub**: Commit all changes to the repository.
+## Current Plan: Connect Studio to Home Page
+1. **Save Functionality**: Update `main.js` to save published sets to `localStorage`.
+2. **List Display**: Update `index.html` to dynamically list saved question sets.
+3. **Response Page**: Create `respond.html` to handle the actual answering process.
+4. **Navigation**: Ensure smooth flow from Creation -> Home -> Responding.

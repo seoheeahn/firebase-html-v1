@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoBee Studio - Chat with AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href='/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="messenger-body">
+  <nav class="nav-bar">
+    <div class="container nav-container">
+      <div class="gate-logo" style="font-size: 1.2rem;">
+        <i class="fas fa-bee"></i>
+        <span>AlgoBee Studio</span>
+      </div>
+      <a href="/index.html" class="nav-btn">Exit</a>
+    </div>
+  </nav>
+
+  <main class="messenger-container">
+    <!-- Chat Window -->
+    <div id="chat-window" class="chat-window">
+      <!-- Messages will be injected here -->
+      <div class="message bot">
+        <div class="avatar"><i class="fas fa-bee"></i></div>
+        <div class="bubble">
+          안녕하세요! 질문 생성 스튜디오에 오신 것을 환영합니다. 🐝<br/>
+          어떤 주제로 질문 세트를 만들어볼까요? 아래에서 선택하거나 직접 입력해주세요.
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Area (Options + TextField) -->
+    <div class="input-area">
+      <div class="container">
+        <!-- Interactive Area (Options) moved here -->
+        <div id="chat-options" class="chat-options">
+          <button class="chip" onclick="selectField('Music Style')">🎵 Music Style</button>
+          <button class="chip" onclick="selectField('Travel Type')">✈️ Travel Type</button>
+          <button class="chip" onclick="selectField('Game Play')">🎮 Game Play</button>
+          <button class="chip" onclick="selectField('Study Habit')">📚 Study Habit</button>
+        </div>
+        
+        <div class="input-wrapper">
+          <input type="text" id="user-input" placeholder="Type your topic here...">
+          <button id="send-btn" class="send-btn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Step Progress (Subtle) -->
+  <div class="mini-progress">
+    <div class="progress-bar" id="progress-bar" style="width: 20%;"></div>
+  </div>
+
+  <script defer type="text/javascript" src="/main.js"></script>
+</body>
+</html>
