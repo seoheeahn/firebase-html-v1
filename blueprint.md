@@ -7,12 +7,12 @@ A modern, tech-focused profile page for the character "AlgoBee". This page highl
 - **Character Name:** AlgoBee
 - **Features:**
     - Profile Header with Name and Bio
-    - Interactive SNS buttons (GitHub, LinkedIn, Twitter, Tistory)
+    - Interactive SNS buttons (GitHub, Twitter, Tistory)
     - Modern, responsive design with a "tech-bee" theme
-    - Web Components for reusability
+    - **SkillBadge (Web Component)**: Outline style (#tag format)
     - **White Mode (Light Theme)** support
 
-## Current Plan: Update Links and Implement White Mode
-1. **Update SNS links** in `index.html` (Twitter to `true_algobee`, add Tistory).
-2. **Refactor CSS** in `style.css` to use a light/white theme as the primary mode.
+## Current Plan: Refine UI and Links
+1. **Remove LinkedIn** from SNS links.
+2. **Implement Outline Style** for skill badges and SNS buttons (matching text and border colors).
 3. **Push the changes** to the repository.

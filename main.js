@@ -50,21 +50,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     .badge {
                         display: inline-block;
                         padding: 0.2rem 0.6rem;
-                        background: ${color};
-                        color: #1a1a1a;
+                        background: transparent;
+                        color: ${color};
+                        border: 1px solid ${color};
                         border-radius: 12px;
                         font-size: 0.8rem;
                         font-weight: bold;
                         margin: 0.2rem;
                         text-transform: uppercase;
-                        box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-                        transition: transform 0.2s ease;
+                        box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+                        transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
                     }
                     .badge:hover {
                         transform: scale(1.05);
+                        background: ${color};
+                        color: #ffffff;
                     }
                 </style>
-                <span class="badge">${name}</span>
+                <span class="badge">#${name}</span>
             `;
         }
     }
