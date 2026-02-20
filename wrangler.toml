@@ -1,6 +1,0 @@
-#:schema node_modules/wrangler/config-schema.json
-name = "firebase-html-v1"
-compatibility_date = "2024-02-20"
-
-# Pages 프로젝트임을 명시
-pages_build_output_dir = "."
