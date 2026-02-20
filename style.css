@@ -1,11 +1,12 @@
 :root {
   --primary-color: #f7d54e; /* Bee Yellow */
-  --secondary-color: #2c2c2c; /* Charcoal Black */
-  --accent-color: #3d3d3d;
-  --text-color: #f0f0f0;
-  --background-color: #1a1a1a;
+  --secondary-color: #ffffff; /* White background for container */
+  --accent-color: #e0e0e0;
+  --text-color: #333333; /* Dark text for light mode */
+  --background-color: #f9f9f9; /* Light gray background */
   --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --transition-speed: 0.3s;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -18,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: radial-gradient(circle, #252525 1px, transparent 1px);
+  background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
@@ -26,7 +27,7 @@ body {
   background-color: var(--secondary-color);
   padding: 3rem;
   border-radius: 1.5rem;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px var(--shadow-color);
   max-width: 500px;
   width: 90%;
   text-align: center;
@@ -36,7 +37,7 @@ body {
 
 .container:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 45px rgba(247, 213, 78, 0.1);
+  box-shadow: 0 15px 40px rgba(247, 213, 78, 0.2);
 }
 
 .profile-header {
@@ -53,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 4rem;
-  box-shadow: 0 0 20px rgba(247, 213, 78, 0.3);
+  box-shadow: 0 4px 15px rgba(247, 213, 78, 0.4);
   animation: float 4s ease-in-out infinite;
 }
 
@@ -65,28 +66,28 @@ body {
 .name {
   font-size: 2.5rem;
   margin: 0;
-  color: var(--primary-color);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #222; /* Darker name */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .tagline {
   font-size: 1.1rem;
-  color: #aaa;
+  color: #666;
   margin-top: 0.5rem;
 }
 
 .content h2 {
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: #222;
   margin-bottom: 1rem;
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--primary-color);
   display: inline-block;
   padding-bottom: 5px;
 }
 
 .bio p {
   line-height: 1.6;
-  color: #ccc;
+  color: #444;
   margin-bottom: 1.5rem;
 }
 
@@ -101,6 +102,7 @@ body {
 .sns-buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -110,7 +112,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: var(--text-color);
+  color: #555;
   font-size: 0.9rem;
   transition: transform var(--transition-speed), color var(--transition-speed);
 }
@@ -125,9 +127,10 @@ body {
   color: var(--primary-color);
 }
 
-.sns-button.github:hover i { color: #f0f0f0; }
+.sns-button.github:hover i { color: #333; }
 .sns-button.linkedin:hover i { color: #0077b5; }
 .sns-button.twitter:hover i { color: #1da1f2; }
+.sns-button.tistory:hover i { color: #eb531f; }
 
 /* Responsive adjustments */
 @media (max-width: 480px) {
