@@ -21,9 +21,11 @@ A modern, tech-focused profile page for the character "AlgoBee". This page highl
     - **Framework preset**: `None`
     - **Build command**: (비워둠)
     - **Build output directory**: `/` (루트 디렉토리)
-5. **Save and Deploy**를 누르면 이후 GitHub에 푸시할 때마다 자동으로 배포됩니다.
+5. **wrangler.toml**: 배포 설정 및 호환성 날짜가 포함되어 있습니다.
+6. **Save and Deploy**를 누르면 이후 GitHub에 푸시할 때마다 자동으로 배포됩니다.
 
 ## Current Plan: Cloudflare Deployment Setup
 1. **Create `package.json`**: Add `wrangler` and basic scripts.
 2. **Add `.node-version`**: Set Node.js version for Cloudflare build.
-3. **Push to GitHub**: Changes will trigger deployment if connected.
+3. **Create `wrangler.toml`**: Define deployment name and build output directory.
+4. **Push to GitHub**: Changes will trigger deployment if connected.

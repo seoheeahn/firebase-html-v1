@@ -1,0 +1,7 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "algo-bee-profile"
+compatibility_date = "2024-02-20"
+
+[pages_build_output_dir]
+# 현재 프로젝트의 모든 파일이 루트에 있으므로 루트(".")를 지정합니다.
+directory = "."
