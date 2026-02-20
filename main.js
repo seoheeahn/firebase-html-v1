@@ -9,19 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const { clientX, clientY } = e;
         const { offsetLeft, offsetTop, offsetWidth, offsetHeight } = container;
         
-        // Calculate relative position (0 to 1)
         const x = (clientX - offsetLeft) / offsetWidth;
         const y = (clientY - offsetTop) / offsetHeight;
         
-        // Tilt effect
-        const tiltX = (y - 0.5) * 10;
-        const tiltY = (x - 0.5) * -10;
+        // Pixel-style shadow shift instead of rotation
+        const moveX = (x - 0.5) * 20;
+        const moveY = (y - 0.5) * 20;
         
-        container.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-5px)`;
+        container.style.boxShadow = `${10 - moveX}px ${10 - moveY}px 0px rgba(0,0,0,0.2)`;
+        container.style.transform = `translate(${moveX/2}px, ${moveY/2}px)`;
     });
 
     container.addEventListener('mouseleave', () => {
-        container.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)`;
+        container.style.boxShadow = `10px 10px 0px rgba(0,0,0,0.1)`;
+        container.style.transform = `translate(0, 0)`;
     });
 
     // Animate SNS buttons one by one
@@ -49,20 +50,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 <style>
                     .badge {
                         display: inline-block;
-                        padding: 0.2rem 0.6rem;
+                        padding: 0.4rem 0.6rem;
                         background: transparent;
                         color: ${color};
-                        border: 1px solid ${color};
-                        border-radius: 12px;
-                        font-size: 0.8rem;
+                        border: 3px solid ${color}; /* Thicker, pixel-like border */
+                        border-radius: 4px; /* Less rounded for pixel feel */
+                        font-family: 'Press Start 2P', cursive;
+                        font-size: 0.5rem;
                         font-weight: bold;
-                        margin: 0.2rem;
+                        margin: 0.3rem;
                         text-transform: uppercase;
-                        box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
-                        transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+                        transition: all 0.2s ease;
                     }
                     .badge:hover {
-                        transform: scale(1.05);
+                        transform: translate(-2px, -2px);
+                        box-shadow: 2px 2px 0px ${color};
                         background: ${color};
                         color: #ffffff;
                     }

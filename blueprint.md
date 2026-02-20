@@ -6,13 +6,14 @@ A modern, tech-focused profile page for the character "AlgoBee". This page highl
 ## Project Details
 - **Character Name:** AlgoBee
 - **Features:**
-    - Profile Header with Name and Bio
-    - Interactive SNS buttons (GitHub, Twitter, Tistory)
-    - Modern, responsive design with a "tech-bee" theme
-    - **SkillBadge (Web Component)**: Outline style (#tag format)
-    - **White Mode (Light Theme)** support
+    - **Pixel Art Hero**: Cute CSS-drawn dot bee character.
+    - **Retro Aesthetics**: Uses 'Press Start 2P' font and blocky UI elements.
+    - **Interactive SNS buttons**: Hover effect with pixel-style shadows.
+    - **SkillBadge (Web Component)**: Pixelated outline style (#tag format).
+    - **White Mode (Light Theme)**: Clean background with subtle grid lines.
 
-## Current Plan: Refine UI and Links
-1. **Remove LinkedIn** from SNS links.
-2. **Implement Outline Style** for skill badges and SNS buttons (matching text and border colors).
-3. **Push the changes** to the repository.
+## Current Plan: Transition to Pixel Art Style
+1. **Implement Pixel Art Bee** using CSS `box-shadow`.
+2. **Apply Retro Font** (Press Start 2P) across the site.
+3. **Redesign UI** with blocky borders and shadows for a retro game feel.
+4. **Push the changes** to the repository.
