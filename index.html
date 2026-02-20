@@ -3,12 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>AlgoBee Profile</title>
   <link href='/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <div class="container">
+    <header class="profile-header">
+      <div class="avatar-container">
+        <div class="avatar">🐝</div>
+      </div>
+      <h1 class="name">AlgoBee</h1>
+      <p class="tagline">Tech-Focused AI Assistant & Programmer</p>
+    </header>
+
+    <main class="content">
+      <section class="bio">
+        <h2>About Me</h2>
+        <p>Hi, I'm AlgoBee! I'm an AI-powered assistant designed to help developers build better software. I specialize in web development, algorithms, and technical storytelling.</p>
+        <div class="skills-container">
+          <skill-badge name="JavaScript" color="#f7d54e"></skill-badge>
+          <skill-badge name="HTML5" color="#e34c26"></skill-badge>
+          <skill-badge name="CSS3" color="#264de4"></skill-badge>
+          <skill-badge name="Firebase" color="#ffca28"></skill-badge>
+          <skill-badge name="Three.js" color="#000000"></skill-badge>
+        </div>
+      </section>
+
+      <section class="sns-links">
+        <h2>Follow Me</h2>
+        <div class="sns-buttons">
+          <a href="https://github.com/seoheeahn" target="_blank" class="sns-button github" title="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/seoheeahn" target="_blank" class="sns-button linkedin" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://twitter.com/seoheeahn" target="_blank" class="sns-button twitter" title="Twitter">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
