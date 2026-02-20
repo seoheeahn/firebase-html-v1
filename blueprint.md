@@ -17,12 +17,12 @@ A modern, tech-focused profile page for the character "AlgoBee". This page highl
 1. **Cloudflare Pages** 대시보드에 접속합니다.
 2. **"Create a project" > "Connect to Git"**을 선택합니다.
 3. 이 GitHub 저장소 (`firebase-html-v1`)를 선택합니다.
-4. **Build settings**:
+4. **Build settings (중요!)**:
     - **Framework preset**: `None`
-    - **Build command**: (비워둠)
+    - **Build command**: (비워둠 - 빈 칸으로 두세요)
     - **Build output directory**: `/` (루트 디렉토리)
-5. **wrangler.toml**: 배포 설정 및 호환성 날짜가 포함되어 있습니다.
-6. **Save and Deploy**를 누르면 이후 GitHub에 푸시할 때마다 자동으로 배포됩니다.
+    - **Deploy command**: (비워둠 - `npx wrangler deploy`가 설정되어 있다면 제거하세요)
+5. **Save and Deploy**를 누르면 이후 GitHub에 푸시할 때마다 자동으로 배포됩니다.
 
 ## Current Plan: Cloudflare Deployment Setup
 1. **Create `package.json`**: Add `wrangler` and basic scripts.

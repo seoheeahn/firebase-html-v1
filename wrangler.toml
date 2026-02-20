@@ -2,6 +2,10 @@
 name = "firebase-html-v1"
 compatibility_date = "2024-02-20"
 
+# Pages 프로젝트 설정을 명시적으로 정의
+[site]
+bucket = "."
+
+# 만약 Cloudflare Pages 대시보드에서 빌드 출력을 설정한다면 아래 섹션을 참고합니다.
 [pages_build_output_dir]
-# 현재 프로젝트의 모든 파일이 루트에 있으므로 루트(".")를 지정합니다.
 directory = "."
